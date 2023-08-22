@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    
+    align-items: center;
+    justify-content: center;
+    color: #222;
+   
+}
+#app{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px); 
+    padding:24px;
+    gap: 24px;
+}
+.note-container {
+    display: grid;
+    width: 1000px;
+    grid-template-columns: repeat(auto-fill, 200px); 
+    gap: 24px;
+}
+.note {
+    height: 200px;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    background-color: #f0f0f0;
+ 
+}
+.add-note {
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #a0b2c2;
+    font-size: 130px;
+    border-radius: 10px;
+    color: #2a384c;
+    transition: background 0.2s;
+}
+.add-note:hover {
+    background-color: #d1d9df;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal, .modal-second {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    top:  0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content, .modal-content-second  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    max-width: 400px;
+    height: 200px;
+    margin: 0 auto;
+}
+.modal-content-second {
+    height: 350px;
+}
+.sign-in-form input {
+    margin-bottom: 10px;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn-sign-in, .btn-log-in {
+    width: 70px;
+    margin-top: 10px;
+    border: none;
+
+}
+
+
